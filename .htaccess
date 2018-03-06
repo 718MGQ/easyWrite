@@ -1,0 +1,27 @@
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 12 month"
+ExpiresByType text/html "access plus 12 months"
+ExpiresByType text/css "access plus 12 months"
+ExpiresByType image/gif "access plus 12 months"
+ExpiresByType image/jpeg "access plus 12 months"
+ExpiresByType image/jpg "access plus 12 months"
+ExpiresByType image/png "access plus 12 months"
+EXpiresByType application/x-shockwave-flash "access plus 12 months"
+EXpiresByType application/x-javascript      "access plus 12 months"
+ExpiresByType video/x-flv "access plus 12 months"
+</IfModule>
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css image/gif image/jpeg image/png application/x-javascript
+</IfModule>

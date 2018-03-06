@@ -1,0 +1,223 @@
+[ 2017-12-25T10:34:58+08:00 ] 127.0.0.1 /index.php/PC/User/dis
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-12-25T10:34:59+08:00 ] 127.0.0.1 /index.php/PC/Confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+
+[ 2017-12-25T10:34:59+08:00 ] 127.0.0.1 /index.php/PC/Confirm/refresh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0230s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT file_name name from task where upfile_gid = 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT file_name name from task where upfile_gid = 
+
+[ 2017-12-25T10:35:06+08:00 ] 127.0.0.1 /index.php/PC/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [2] Declaration of Common\Model\TeacherModel::check($gid, $pwd) should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\xampp\htdocs\form\Application\Common\Model\TeacherModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0215s ]
+SQL: SELECT gid,password FROM teacher WHERE gid= 130001 AND password= 130001 [ RunTime:0.0025s ]
+
+[ 2017-12-25T10:35:07+08:00 ] 127.0.0.1 /index.php/PC/Confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `task_info` [ RunTime:0.0238s ]
+SQL: 
+				SELECT task.file_name,task_info.task_id,task_info.submit_time,task.task_time,task_info.writed,task_info.isupdata,task_info.is_sp 
+				FROM task,task_info
+				WHERE task_info.task_id=task.id and task_info.gid=130001
+		 [ RunTime:0.0006s ]
+
+[ 2017-12-25T10:35:07+08:00 ] 127.0.0.1 /index.php/PC/Confirm/refresh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0153s ]
+SQL: SELECT file_name name from task where upfile_gid = 130001 [ RunTime:0.0003s ]
+
+[ 2017-12-25T10:35:59+08:00 ] 127.0.0.1 /index.php/PC/Confirm/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0213s ]
+SQL: INSERT INTO `task` (`file_name`,`task_time`,`upfile_gid`,`file_url`,`settasktime`) VALUES ('专利信息调查表.docx','1514169359','130001','D:\\xampp\\htdocs\\form\\tasktable\\130001专利信息调查表.docx','1514169359') [ RunTime:0.1230s ]
+
+[ 2017-12-25T10:36:04+08:00 ] 127.0.0.1 /index.php/PC/Confirm/fileLoad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `all_table` [ RunTime:0.0167s ]
+SQL: SELECT id,table_name FROM all_table WHERE key_name = '专利' [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `all_columns` [ RunTime:0.0210s ]
+SQL: SELECT columns_name,keywords from all_columns where all_table_id = 4 [ RunTime:0.0009s ]
+SQL: SELECT name,unit,certificateid,permitdate,categoryid,score,submitdateid FROM resultproperty WHERE gid = 130001 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+
+[ 2017-12-25T10:36:36+08:00 ] 127.0.0.1 /index.php/PC/Confirm/contentCheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `all_table` [ RunTime:0.0786s ]
+SQL: SELECT id,table_name FROM all_table WHERE key_name = '专利' [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `all_columns` [ RunTime:0.0139s ]
+SQL: SELECT columns_name,keywords from all_columns where all_table_id = 4 [ RunTime:0.0003s ]
+SQL: SELECT name,unit,certificateid,permitdate,categoryid,score,submitdateid FROM resultproperty WHERE gid = 130001 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 131 行.
+NOTIC: [8] Undefined offset: 7 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 131 行.
+NOTIC: [8] Undefined offset: 7 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `resultproperty` [ RunTime:0.0105s ]
+SQL: UPDATE `resultproperty` SET name = '11' , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = '1' WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '东北林业大学' , certificateid = '1' , permitdate = '213123' , categoryid = '1' , score = '1' , submitdateid = null WHERE name=null and unit='东北林业大学' and certificateid='1' and permitdate='213123' and categoryid='1' and score='1' and submitdateid='1';UPDATE `resultproperty` SET name = null , unit = '清华大学' , certificateid = '1' , permitdate = '1' , categoryid = '1' , score = '1' , submitdateid = null WHERE name=null and unit='清华大学' and certificateid='1' and permitdate='1' and categoryid='1' and score='1' and submitdateid=null;UPDATE `resultproperty` SET name = null , unit = '哈尔滨工业大学' , certificateid = '1' , permitdate = '1' , categoryid = '1' , score = '1' , submitdateid = null WHERE name=null and unit='哈尔滨工业大学' and certificateid='1' and permitdate='1' and categoryid='1' and score='1' and submitdateid=null; [ RunTime:0.0007s ]
+NOTIC: [2] copy(D:\xampp\htdocs\form\temp_file\130001temp_file.docx): failed to open stream: Resource temporarily unavailable D:\xampp\htdocs\form\Application\PC\Controller\ExcelFile.class.php 第 114 行.
+NOTIC: [8] Undefined offset: 7 D:\xampp\htdocs\form\Application\PC\Controller\MyWord.class.php 第 343 行.
+NOTIC: [8] Undefined offset: 7 D:\xampp\htdocs\form\Application\PC\Controller\MyWord.class.php 第 346 行.
+
+[ 2017-12-25T10:36:37+08:00 ] 127.0.0.1 /index.php/PC/Confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `task_info` [ RunTime:0.0219s ]
+SQL: 
+				SELECT task.file_name,task_info.task_id,task_info.submit_time,task.task_time,task_info.writed,task_info.isupdata,task_info.is_sp 
+				FROM task,task_info
+				WHERE task_info.task_id=task.id and task_info.gid=130001
+		 [ RunTime:0.0004s ]
+
+[ 2017-12-25T10:36:37+08:00 ] 127.0.0.1 /index.php/PC/Confirm/refresh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0117s ]
+SQL: SELECT file_name name from task where upfile_gid = 130001 [ RunTime:0.0004s ]
+
+[ 2017-12-25T10:36:42+08:00 ] 127.0.0.1 /index.php/PC/Confirm/fileLoad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `all_table` [ RunTime:0.0166s ]
+SQL: SELECT id,table_name FROM all_table WHERE key_name = '专利' [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `all_columns` [ RunTime:0.0183s ]
+SQL: SELECT columns_name,keywords from all_columns where all_table_id = 4 [ RunTime:0.0003s ]
+SQL: SELECT name,unit,certificateid,permitdate,categoryid,score,submitdateid FROM resultproperty WHERE gid = 130001 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 9 D:\xampp\htdocs\form\Application\PC\Controller\ReaderFileController.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\form\Application\PC\Controller\ConfirmController.class.php 第 73 行.
+
+[ 2017-12-25T10:36:45+08:00 ] 127.0.0.1 /index.php/PC/Download?file_name=%E4%B8%93%E5%88%A9%E4%BF%A1%E6%81%AF%E8%B0%83%E6%9F%A5%E8%A1%A8.docx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0178s ]
+SQL: DELETE FROM `task` WHERE ( upfile_gid = 130001 and file_name = '专利信息调查表.docx' ) [ RunTime:0.0994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2017-12-25T10:36:45+08:00 ] 127.0.0.1 /index.php/PC/Confirm/refresh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `task` [ RunTime:0.0571s ]
+SQL: SELECT file_name name from task where upfile_gid = 130001 [ RunTime:0.0049s ]
+
+[ 2017-12-25T10:36:45+08:00 ] 127.0.0.1 /index.php/PC/Confirm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `task_info` [ RunTime:0.0194s ]
+SQL: 
+				SELECT task.file_name,task_info.task_id,task_info.submit_time,task.task_time,task_info.writed,task_info.isupdata,task_info.is_sp 
+				FROM task,task_info
+				WHERE task_info.task_id=task.id and task_info.gid=130001
+		 [ RunTime:0.0008s ]
+

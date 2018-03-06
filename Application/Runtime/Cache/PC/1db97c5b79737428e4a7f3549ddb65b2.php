@@ -1,0 +1,14 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="logo.jpg">
+  <title>易填表</title>
+<link href="/Public/pc/css/common.9efdd876.css" rel="stylesheet"><link href="/Public/pc/css/app.6c371b47.css" rel="stylesheet"></head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="/Public/pc/js/common.1d167b155226f779a354.js"></script><script type="text/javascript" src="/Public/pc/js/app.f464febf.js"></script></body>
+</html>
